@@ -55,7 +55,8 @@ export class ApiService {
   }
 
   async upload(endpoint: string, file: File, payload: any): Promise<any> {
-    const signed_url = (await this.get(`${endpoint}/signed-url/${file.name}`)).url;
+    const url = `${API_HOST}${endpoint}`;
+    const signed_url = (await this.get(`${url}/signed-url/${file.name}`)).url;
 
     const headers = new HttpHeaders({'Content-Type': file.type});
     const req = new HttpRequest( 'PUT', signed_url, file,
