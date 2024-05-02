@@ -33,15 +33,34 @@ This application is provided to you as an alternative starter project if you do 
 
 ```
 
+### Environment Variables
+
+```
+- PORT                = 8080
+- POSTGRES_HOST       = <Database_Host>
+- POSTGRES_PORT       = <Database_Port>
+- POSTGRES_DB         = <Database_Name>
+- POSTGRES_USERNAME   = <Database_Username>
+- POSTGRES_PASSWORD   = <Database_Password>
+- URL                 = <Frontend_Url>
+- JWT_SECRET          = <>
+- AWS_REGION          = <us-east-1>
+- AWS_PROFILE         = <Default>
+- AWS_BUCKET          = <Bucket_Name>
+```
+
 ### Installation
 
-Provision the necessary AWS services needed for running the application:
+1. Go into the project directory - `cd udagram-frontend`
+2. Install the dependencies - `npm install`
+3. Start the frontend - `npm run start`
+4. Open new terminal - `cd ../udagram-api`
+5. Setup `.env`
+6. Install the dependencies - `npm install`
+7. start the backend - `npm run start`
 
-1. In AWS, provision a publicly available RDS database running Postgres. <Place holder for link to classroom article>
-1. In AWS, provision a s3 bucket for hosting the uploaded files. <Place holder for tlink to classroom article>
-1. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
-1. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
-1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
+S3 Endpoint - Frontend: http://udagram-fe.s3-website-us-east-1.amazonaws.com/
+Elastic Beanstalk URL - Backend: http://udagram-api-dev22.us-east-1.elasticbeanstalk.com/api/v0/
 
 ## Testing
 
