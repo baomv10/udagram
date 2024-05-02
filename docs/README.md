@@ -72,7 +72,7 @@ The order of the run jobs:
   - Build the app.
   - Deploy the app to AWS Elastic Beanstalk.
 
-### Installation
+## Installation
 
 1. Go into the project directory - `cd udagram-frontend`
 2. Install the dependencies - `npm install`
