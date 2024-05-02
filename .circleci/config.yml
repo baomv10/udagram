@@ -56,7 +56,7 @@ jobs:
       - run:
           name: Set Environment variables for EB
           command: |
-          npm run api:set-env
+            npm run api:set-env
       # TODO: Deploy App
       - run:
           name: Deploy App
